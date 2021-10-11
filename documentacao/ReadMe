@@ -1,0 +1,22 @@
+Item: Em Empresta_S/src/materiais
+    código (int)
+    descrição (str)
+    localização (str)
+    status (bool) - disponível || indisponível
+    quantidade disponível (int)
+    quantidade indisponível (int)
+
+
+
+Usuários: Em Empresta_S/src/pessoas
+Tipos de usuário e permissões:
+      UNIDADE: acesso total ao sistema, pode cadastrar, editar e visualizar materiais; pode colocar materiais em situação de manutenção; 
+      pode cadastrar, editar e visualizar usuários; 
+      COLABORADOR: Pode visualizar materiais; pode reservar materiais; pode 
+      PROFESSOR: Pode visualizar materiais; pode reservar materiais;
+      ALUNO: Pode visualizar materiais; pode reservar materiais;
+      
+templates/ferramentas:
+    Flutter
+        Login Kit - https://code.market/product/flutter-login-kit/
+        Tamplates - https://github.com/Solido/awesome-flutter#templates
