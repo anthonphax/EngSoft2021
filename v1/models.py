@@ -3,6 +3,7 @@ from django import forms
 from django.db import models
 from django.contrib.auth.models import User
 from django.db import models
+from datetime import datetime, timedelta
 import uuid
 
 gender_choices = (
@@ -261,14 +262,22 @@ class Item:
         )
 
     def emprestimo(self):
-        pass
-
+        if self.status == "D":
+            self.status == "I"
+            dataretorno = datetime.now() + timedelta(days=7)
+            print(f"A data de retorno de {self.title} será {dataretorno} - Obrigado!!")
+        else:
+            print(f"O item {self.title} não está disponível no momento") 
+        
+    def devolucao_pontos(self):
+        points = Usuario.Aluno.points #"Aluno" vai referenciar o modelo?
+        if self.status != "A":
+            points += 5
+            self.status = "D"
+        else:
+            self.status = "D"
+        
     def devolucao(self):
-        # if self.status != "A":
-        #     self.points += 5
-        #     self.status = "D"
-        # else:
-        #     self.status = "D"
         pass
     def manutencao(self):
         pass 
