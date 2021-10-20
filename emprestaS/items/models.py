@@ -18,7 +18,7 @@ class Item(models.Model):
     description = models.TextField()
     status = models.CharField(
         max_length=255,
-        choices=item_status,
+        choices=ITEM_STATUS,
         default="D"
     )
 

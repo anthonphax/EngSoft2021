@@ -6,7 +6,7 @@ class BooksViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BooksSerializer
 
-class DigitalMediasSet(viewsets.ModelViewSet):
+class DigitalMediasViewSet(viewsets.ModelViewSet):
     queryset = DigitalMedia.objects.all()
     serializer_class = DigitalMediasSerializer
 
