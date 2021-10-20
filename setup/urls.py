@@ -15,11 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from emprestas.users.views import StudentsViewSet
-from rest_framework import routers
-
-router = routers.DefaultRouter()
-router.register('students', StudentsViewSet, basename='Students')
+from emprestas.routes import routers
 
 urlpatterns = [
     path('admin/', admin.site.urls),
