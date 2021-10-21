@@ -14,7 +14,7 @@ class Item(models.Model):
     itemName = models.CharField(max_length=255, default="NA")
     # slug = models.SlugField(max_lenth=255, unique=True)
     created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now_add=True) # não seria 'auto_now'?
     description = models.TextField()
     status = models.CharField(
         max_length=255,
