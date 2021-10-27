@@ -10,7 +10,8 @@ item_status = (
     ("A", "Atrasado")
     )
 
-class UnidadeUser(models.Model):
+
+class UnityUser(models.Model):
     id = uuid.uuid1().hex
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     cnpj = models.CharField(
