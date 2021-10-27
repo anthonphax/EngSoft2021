@@ -6,6 +6,10 @@ userRouter = routers.DefaultRouter()
 itemRouter = routers.DefaultRouter()
 
 userRouter.register('students', StudentsViewSet, basename='Students')
+userRouter.register('professors', ProfessorViewSet, basename='Professors')
+userRouter.register('collaborators', CollaboratorViewSet, basename='Collaborators')
+userRouter.register('unities', UnityUserViewSet, basename='Unities')
+
 
 itemRouter.register('books', BooksViewSet, basename='Books')
 itemRouter.register('digital-media', DigitalMediasViewSet, basename='DigitalMedias')
