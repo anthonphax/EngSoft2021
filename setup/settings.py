@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'emprestas',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount'
+    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [

@@ -19,9 +19,12 @@ from django.contrib import admin
 from django.urls import path, include
 from emprestas.routes import *
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include(userRouter.urls)),
     path('items/', include(itemRouter.urls)),
     path('accounts/', include('allauth.urls')),
 ]
+
+
