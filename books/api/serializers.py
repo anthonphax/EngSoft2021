@@ -5,3 +5,8 @@ class BooksSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Books
         fields = '__all__'
+
+class LoanBookSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Books
+        fields = ['quantity']

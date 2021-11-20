@@ -7,4 +7,6 @@ class Books(models.Model):
     author = models.CharField(max_length=255)
     release_date = models.DateField()
     publisher = models.CharField(max_length=255)
+    totalQuantity = models.IntegerField(default=0)
+    availableQuantity = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)

@@ -7,3 +7,9 @@ class BookViewSet(viewsets.ModelViewSet):
 
     queryset = serializers.BooksSerializer.Meta.model.objects.all()
     serializer_class = serializers.BooksSerializer
+
+class LoanBookViewSet(viewsets.ModelViewSet):
+    permission_classes = (IsAuthenticated,)
+
+    queryset = serializers.LoanBookSerializer.Meta.model.objects.all()
+    serializer_class = serializers.LoanBookSerializer
