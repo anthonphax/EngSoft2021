@@ -9,4 +9,4 @@ class BooksSerializer(serializers.ModelSerializer):
 class LoanBookSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Books
-        fields = ['quantity']
+        fields = ['availableQuantity']

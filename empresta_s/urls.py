@@ -23,10 +23,12 @@ from rest_framework_simplejwt.views import (
 )
 
 from books.api.urls import bookRoute
+from loan.api.urls import loansRoutes
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('authApp.api.urls')),
-    path('', include(bookRoute.urls))
+    path('', include(bookRoute.urls)),
+    path('', include(loansRoutes.urls))
 ]

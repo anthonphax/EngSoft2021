@@ -10,3 +10,4 @@ class Books(models.Model):
     totalQuantity = models.IntegerField(default=0)
     availableQuantity = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(upload_to='books/', blank=True, null=True)
