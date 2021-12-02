@@ -3,5 +3,5 @@ from .viewsets import *
 
 bookRoute = routers.DefaultRouter()
 
-bookRoute.register(r'books', BookViewSet, basename='Books')
-bookRoute.register(r'books/loan', LoanBookViewSet, basename='LoanBook')
+bookRoute.register(r'items', BookViewSet, basename='Books')
+bookRoute.register(r'items/loan', LoanBookViewSet, basename='LoanBook')

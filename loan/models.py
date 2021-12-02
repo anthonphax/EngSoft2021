@@ -9,7 +9,6 @@ LOAN_CHOICES = (
 
 class Loans(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    loan_amount = models.DecimalField(max_digits=10, decimal_places=2)
     # loan_date = models.DateField(editable=False)
     # return_date = models.DateField(editable=False)
     loan_status = models.CharField(choices=LOAN_CHOICES, default="I", max_length=1)
